@@ -1,4 +1,4 @@
-# Kubernetes Event-Driven Autoscaling (KEDA) with Apache Kafka (KRaft)
+# Kubernetes Event-Driven Autoscaling (KEDA) with Apache Kafka
 
 This repository provides a complete proof-of-concept for **event-driven autoscaling in Kubernetes using KEDA and Apache Kafka (KRaft mode)**.
 
@@ -36,7 +36,6 @@ This enables scaling based on **real workload demand**, not infrastructure metri
 Before deploying, ensure you have:
 
 - A running Kubernetes cluster (Tanzu, OpenShift, kind, etc.)
-- `kubectl` configured with cluster-admin access
 - Docker or compatible container runtime
 - **Strimzi Kafka Operator installed**
 - **KEDA installed in the cluster**
