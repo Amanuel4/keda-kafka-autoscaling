@@ -8,6 +8,7 @@ Instead of relying on CPU or memory metrics, this system scales workloads dynami
 
 ## 🏗️ Architecture Overview
 
+![Architecture](images/architecture.png)
 This solution uses:
 
 - **Apache Kafka (KRaft mode via Strimzi 4.2.0)** as the event backbone
