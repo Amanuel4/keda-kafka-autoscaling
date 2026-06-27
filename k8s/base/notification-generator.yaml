@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notification-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notification-generator
+  template:
+    metadata:
+      labels:
+        app: notification-generator
+    spec:
+      containers:
+      - name: generator
+        image: <YOUR_REGISTRY>/notification-generator:main
+        envFrom:
+        - configMapRef:
+            name: notification-config
